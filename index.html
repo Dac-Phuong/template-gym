@@ -37,8 +37,7 @@
       <div class="section-main">
         <div class="baner">
           <img src="./acsset/img/baner.jpg" alt="" class="baner-img">
-        </div>
-        <div class="section-heading">
+          <div class="section-heading">
             <div class="section-conten">
               <h2 class="heading-h2">Dumbbells Shop</h2>
               <span class="heading-span">Best body fitness</span>
@@ -48,31 +47,32 @@
               </p>
               <button href="">SHOW NOW</button>
             </div>
-        </div>
-        <div class="category-product">
-          <div class="category-product-colums">
-            <div class="colum-6"><img class="img" src="./acsset/img/img1.png" alt=""></div>
-            <div class="colum-6">
-              <div class="colum-6-img">
-                <img src="./acsset/img/icon.png" alt="">
-                <h4>STRENGTH</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
+          <div class="category-product">
+            <div class="category-product-colums">
+              <div class="colum-6"><img class="img" src="./acsset/img/img1.png" alt=""></div>
+              <div class="colum-6">
+                <div class="colum-6-img">
+                  <img src="./acsset/img/icon.png" alt="">
+                  <h4>STRENGTH</h4>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
               </div>
-            </div>
-            <div class="colum-6"><img  class="img" src="./acsset/img/img2.png" alt=""></div>
-            <div class="colum-6">
-              <div class="colum-6-img">
-                <img src="./acsset/img/icon_1.png" alt="">
-                <h4>DUMBBELLS</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <div class="colum-6"><img  class="img" src="./acsset/img/img2.png" alt=""></div>
+              <div class="colum-6">
+                <div class="colum-6-img">
+                  <img src="./acsset/img/icon_1.png" alt="">
+                  <h4>DUMBBELLS</h4>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
               </div>
-            </div>
-            <div class="colum-6"><img  class="img" src="./acsset/img/img_2.png" alt=""></div>
-            <div class="colum-6">
-              <div class="colum-6-img">
-                <img src="./acsset/img/icon_2.png" alt="">
-                <h4>POWER RACK & CAGES</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <div class="colum-6"><img  class="img" src="./acsset/img/img_2.png" alt=""></div>
+              <div class="colum-6">
+                <div class="colum-6-img">
+                  <img src="./acsset/img/icon_2.png" alt="">
+                  <h4>POWER RACK & CAGES</h4>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -80,18 +80,26 @@
         <div class="class"></div>
         <div class="tabar">
           <div class="tabbar-heading">
-            <ul class="heading-list">
-              <li class="heading-item"><a class="item-link" href="">TOP SELLERS</a></li>
-              <li class="heading-item"><a class="item-link" href="">FEATURED</a></li>
-              <li class="heading-item"><a class="item-link" href="">MOST REVIEWS</a></li>
-            </ul>
+            <div class="heading-list">
+              <button type-food="all" class=" active heading-btn">TOP SELLERS</button>
+            </div>
+            <div class="heading-list">
+              <button type-food="featured"  class="heading-btn">FEATURED</button>
+            </div>
+            <div class="heading-list">
+              <button type-food="most" class="heading-btn">MOST REVIEWS</button>
+            </div>
           </div>
           <div class="hr"></div>
           <div class="product">
             <ul class="product-list">
-              <li class="product-item">
-                <a class="product-item-link" href="">
-                  <img src="./acsset/img/product_1.png" alt="" class="product-item-img">
+              <li type-food="featured" class="product-item">
+                <div class="product-item-link" href="">
+                  <div class="product-item-image">
+                    <img src="./acsset/img/product_1.png" alt="" class="product-item-img mySlides">
+                    <!-- <img src="./acsset/img/product_2.png" alt="" class="product-item-img mySlides">
+                    <img src="./acsset/img/product_3.png" alt="" class="product-item-img mySlides"> -->
+                  </div>
                   <div class="item-price">
                     <h4 class="product-item-name">Body champ cardio</h4>
                     <span class="prduct-item-price">$342.00</span>
@@ -99,13 +107,13 @@
                   <div class="product-icons">
                     <span class="product-icon"><i class=" fa-solid fa-basket-shopping"></i></span>
                     <span class="product-icon"><i class="fa-solid fa-eye"></i></span>
-                    <span class="product-icon"><i class=" fa-solid fa-heart"></i></span>
-                    <span class="product-icon"> <i class=" fa-solid fa-arrow-right-arrow-left"></i></span>           
+                    <span class="product-icon like"><i onclick="love()" class=" fa-solid fa-heart"></i></span>
+                    <span class="product-icon "> <i  class=" fa-solid fa-arrow-right-arrow-left"></i></span>           
                   </div>
-               </a>
+                </div>
               </li>
-              <li class="product-item">
-                <a class="product-item-link" href="">
+              <li type-food="most" class="product-item">
+                <div class="product-item-link" href="">
                   <img src="./acsset/img/product_2.png" alt="" class="product-item-img">
                   <div class="item-price">
                     <h4 class="product-item-name">Body Solid GCEC340</h4>
@@ -114,13 +122,13 @@
                   <div class="product-icons">
                     <span class="product-icon"><i class=" fa-solid fa-basket-shopping"></i></span>
                     <span class="product-icon"><i class="fa-solid fa-eye"></i></span>
-                    <span class="product-icon"><i class=" fa-solid fa-heart"></i></span>
-                    <span class="product-icon"> <i class=" fa-solid fa-arrow-right-arrow-left"></i></span>           
+                    <span class="product-icon"><i onclick="love() "class=" fa-solid fa-heart"></i></span>
+                    <span class="product-icon next-img"> <i class=" fa-solid fa-arrow-right-arrow-left"></i></span>           
                   </div>
-               </a>
+                </div>
               </li>
-              <li class="product-item">
-                <a class="product-item-link" href="">
+              <li type-food="featured" class="product-item">
+                <div class="product-item-link" href="">
                   <img src="./acsset/img/product_3.png" alt="" class="product-item-img">
                   <div class="item-price">
                     <h4 class="product-item-name">Bowflex BXE116 Elliptical
@@ -130,13 +138,13 @@
                   <div class="product-icons">
                     <span class="product-icon"><i class=" fa-solid fa-basket-shopping"></i></span>
                     <span class="product-icon"><i class="fa-solid fa-eye"></i></span>
-                    <span class="product-icon"><i class=" fa-solid fa-heart"></i></span>
+                    <span class="product-icon"><i onclick="love()" class=" fa-solid fa-heart"></i></span>
                     <span class="product-icon"> <i class=" fa-solid fa-arrow-right-arrow-left"></i></span>           
                   </div>
-               </a>
+                </div>
               </li>
-              <li class="product-item">
-                <a class="product-item-link" href="">
+              <li type-food="most" class="product-item">
+                <div class="product-item-link" href="">
                   <img src="./acsset/img/product_4.png" alt="" class="product-item-img">
                   <div class="item-price">
                     <h4 class="product-item-name">ETHOS GHD</h4>
@@ -148,9 +156,9 @@
                     <span class="product-icon"><i class=" fa-solid fa-heart"></i></span>
                     <span class="product-icon"> <i class=" fa-solid fa-arrow-right-arrow-left"></i></span>           
                   </div>
-               </a>
+                </div>
               </li>
-              <li class="product-item">
+              <li type-food="featured" class="product-item">
                 <a class="product-item-link" href="">
                   <img src="./acsset/img/product_5.png" alt="" class="product-item-img">
                   <div class="item-price">
@@ -165,7 +173,7 @@
                   </div>
                </a>
               </li>
-              <li class="product-item">
+              <li type-food="most" class="product-item">
                 <a class="product-item-link" href="">
                   <img src="./acsset/img/product_6.png" alt="" class="product-item-img">
                   <div class="item-price">
@@ -180,7 +188,7 @@
                   </div>
                </a>
               </li>
-              <li class="product-item">
+              <li type-food="featured" class="product-item">
                 <a class="product-item-link" href="">
                   <img src="./acsset/img/product_7.png" alt="" class="product-item-img">
                   <div class="item-price">
@@ -195,7 +203,7 @@
                   </div>
                </a>
               </li>
-              <li class="product-item">
+              <li type-food="featured" class="product-item">
                 <a class="product-item-link" href="">
                   <img src="./acsset/img/product_8.png" alt="" class="product-item-img">
                   <div class="item-price">
@@ -217,19 +225,37 @@
             <div class="section-slider">
               <h2 class="slider-heading">See What They Said About Us</h2>
               <div class="slider">
-                <img src="./acsset/img/logo_1.png" alt="" class="slider-img">
-                <p class="slider-p">“Good services. I bought a bicycle with a wrong but they accepted free return for me and exchange a new product for me.</p>
-              </div>
-              <div class="silder-user">
-                <h2 class="silder-name">LINA</h2>
-                <p>Happy clients</p>
-              </div>
-              <div class="lider-box">
-                <ul class="boxs">
-                <li class="box"></li>
-                <li class="box"></li>
-                <li class="box"></li>
-              </ul>
+                <div class="slider-show mySlides">
+                  <img src="./acsset/img/logo_1.png" alt="" class="slider-img">
+                  <p class="slider-p">“Good services. I bought a bicycle with a wrong but they accepted free return for me and exchange a new product for me.</p>
+                  <div class="silder-user">
+                    <h2 class="silder-name">LINA</h2>
+                    <p>Happy clients</p>
+                  </div>
+                 
+                </div>
+                <!-- <div class="slider-show mySlides">
+                  <img src="./acsset/img/logo_2.png" alt="" class="slider-img">
+                  <p class="slider-p">“Good services. I bought a bicycle with a wrong but they accepted free return for me and exchange a new product for me.</p>
+                  <div class="silder-user">
+                    <h2 class="silder-name">LINA</h2>
+                    <p>Happy clients</p>
+                  </div>
+                </div>
+                <div class="slider-show mySlides">
+                  <img src="./acsset/img/logo_3.png" alt="" class="slider-img">
+                  <p class="slider-p">“Good services. I bought a bicycle with a wrong but they accepted free return for me and exchange a new product for me.</p>
+                  <div class="silder-user">
+                    <h2 class="silder-name">LINA</h2>
+                    <p>Happy clients</p>
+                  </div>
+                </div> -->
+                </div>
+                <div class="lider-box" style="text-align:center">
+                  <span onclick="showSlides(1)" class="dot"></span> 
+                  <span onclick="showSlides(2)" class="dot"></span> 
+                  <span onclick="showSlides(3)" class="dot"></span> 
+              </div>             
               </div>
             </div>
           </div>
@@ -246,7 +272,97 @@
     </section>
     <footer class="footer">
       <div class="footer-info">
-        <div class="footer-logo"><img class="foo" src="./acsset/img/Logo.png" alt=""></div>
+        <div class="footer-logo">
+          <img class="foo" src="./acsset/img/Logo.png" alt="">
+          <p class="footer-text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type
+          </p>
+        </div>
+        <div class="footer-icons">
+          <i class="icon-footer fa-brands fa-facebook-f"></i>
+          <i class="icon-footer fa-brands fa-twitter"></i>
+          <i class="icon-footer fa-brands fa-google-plus-g"></i>
+          <i class="icon-footer fa-brands fa-youtube"></i>
+        </div>
+      </div>
+      <div class="footer-contact">
+        <ul class="footer-colums">
+          <h2 class="footer-heading">CONTACTUS</h2>
+          <li class="footer-colum-4">
+            <div class="footer-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <span> 200 Lincoln Ave, Salinas, CA 93901</span>
+          </li>
+          <li class="footer-colum-4">
+            <div class="footer-icon">
+               <i class="fa-solid fa-phone-flip"></i>
+            </div>
+            <span> 023 32423 223</span>
+          </li>
+          <li class="footer-colum-4">
+            <div class="footer-icon">
+              <i class="fa-solid fa-envelope"></i>
+           </div>
+            <span> gymax@example.com</span>
+          </li>
+          <li class="footer-colum-4">
+            <div class="footer-icon">
+              <i class="fa-solid fa-location-dot"></i>
+           </div>
+            <span>9:00 - 20:00 All day</span>
+          </li>
+        </ul>
+        <ul class="footer-colums">
+          <h2 class="footer-heading">My account</h2>
+          <li class="footer-colum-4">
+            <span> my account</span>
+          </li>
+          <li class="footer-colum-4">
+            <span> check out</span>
+          </li>
+          <li class="footer-colum-4">
+            <span> register </span>
+          </li>
+          <li class="footer-colum-4">
+            <span>login</span>
+          </li>
+        </ul>
+        <ul class="footer-colums">
+          <h2 class="footer-heading">Info mation</h2>
+          <li class="footer-colum-4">
+            <span> about us</span>
+          </li>
+          <li class="footer-colum-4">
+            <span>contuct us</span>
+          </li>
+          <li class="footer-colum-4">
+            <span>terms of user</span>
+          </li>
+          <li class="footer-colum-4">
+            <span>privacy policy</span>
+          </li>
+        </ul>
+        <ul class="footer-colums">
+          <h2 class="footer-heading">quick link</h2>
+          <li class="footer-colum-4">
+            <span> new user</span>
+          </li>
+          <li class="footer-colum-4">
+            <span> help center</span>
+          </li>
+          <li class="footer-colum-4">
+            <span>report spam </span>
+          </li>
+          <li class="footer-colum-4">
+            <span>FAQs</span>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-copyright">
+        <div class="footer-right">Copyright © 2019 Gymax - Design by ArrowHitech - All Rights Reserved</div>
       </div>
     </footer>
   </body>

@@ -16,14 +16,14 @@
 .header {
   position: fixed;
   width: 100%;
-  height: 100px;
-  line-height:100px;
+  height: 95px;
+  line-height:95px;
   z-index: 3;
   background: rgba(0,0,0,.5);
   
 }
 .header-nav {
-  height: 100px;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   width: 1170px;
@@ -48,14 +48,13 @@
   height: 100%;
 }
 .nav-item-link {
-  font-size: 17px;
-  color: #fff;
-  padding-right: 30px;
-  padding-left: 28px;
+  font-size: 16px;
+  color: #fff;  
+  padding: 0 32px;
   display: block;
-  font-weight: 300;
+  font-weight: 400;
   text-decoration: none;
-  font-family: Myriad Pro;
+  font-family: Myriad Pro ;
 }
 .nav-icons {
   color: #fff;
@@ -66,7 +65,7 @@
   position: relative;
   margin-left: 54px;
   font-size: 16px;
-  font-family: Myriad Pro ;
+  font-family: Poppins Regular ;
 }
 .nav-icon-class::before {
   content: "";  
@@ -75,44 +74,40 @@
   width : 1px;
   height: 18px;
   top: 40px;
-  left: 40px;
+  left: 44px;
   background-color: rgb(139, 137, 137);
 }
 
 /* section */
 .section-main {
-  position: relative;
   width:100%;
-  height: 950px;
 }
 .baner {
+  z-index: 1;
+  position: relative;
   width: 100%;
-  height: 100%;
 }
 .baner-img {
-
   width: 100%;  
   height: 100%;
 }
 .section-heading {
-  width: 1170px;
-  max-width: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  max-width: 1170px;
   margin: auto;
+  top: 31%;
+  z-index: 2;
+  position: absolute;
+  color: #ffffff;
+  /* transform: translateY(-50%); */
 
 }
 .section-conten {
-  top: 49%;
-  z-index: 2;
-  position: absolute;
-  width: 28%;
-  height: 316px;
-  max-width: 100%;
-  color: #ffffff;
-  transform: translateY(-50%);
+  width: 47%;
 }
-.tabbar-heading {
-  margin-top: 54px;
-}
+
 .heading-h2 {
   font-size:60px;
   font-weight: bold;
@@ -129,7 +124,7 @@
     padding-top: 19px;
 }
 .section-conten button{
-  margin-top: 29px;
+  margin-top: 60px;
   padding: 15px 44px;
   border: 1px solid #fff;
   text-decoration: none;
@@ -138,6 +133,12 @@
   text-align: center;
   background:none;
   cursor: pointer;
+  transition: .5s;
+}
+.section-conten button:hover{
+  background-color: #777;
+  border: 1px solid #777;
+  color: #fff;
 }
 .section-conten a:hover{
   background-color:#ccc;
@@ -145,18 +146,22 @@
   border: 1px solid #ccc;
 }
 .class {
-  height: 49%;
+  margin-top:26%;
   width: 100%;
+}
+
+.hide {
+	display: none;
 }
 .category-product {
   position:absolute;
-  max-width: 100%;
-  width: 1170px;
+  max-width: 1170px;
+  width: 100%;
   height: 52%;
   left: 0;
   right: 0;
   margin: 0 auto;
-  top: 92%;
+  top: 91%;
   background-color: #fff;
   box-shadow: 0 0 0px 2px #ccc;
 }
@@ -194,6 +199,7 @@
   height: 100%;
 }
 .tabar {
+  padding-top: 10px;
   width:1170px;
   max-width: 100%;
   margin: auto;
@@ -208,35 +214,43 @@
 .heading-list {
   display: flex;
   list-style: none;
+  margin-left:-10px;
+  transition:  0.5s;
+}
+.tabbar-heading{
+  display:flex;
 }
 .product {
   margin-left: -25px;
 }
-.heading-item {
-  position:relative;
-  margin-left: 17px;
+.heading-btn{
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background:none;
+  position: relative;
+  margin-left: 26px;
   margin-bottom: 20px;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: normal;
-  transition: 0.5s;
 }
 .silder-name,
-.item-link {
+.heading-btn {
   text-decoration: none;
   color:#000018;
   font-size: 18px;
   display: block;
 }
-.item-link:hover {
+.heading-btn:hover {
   color:#dd2f31;
 }
-.heading-item:hover .item-link:before {
+.heading-list:hover .heading-btn:before {
   display:block;
   transition: 0.5s;
 }
-.item-link:before {
+.heading-btn:before {
   display: none;
-  position:absolute;  
+  position: absolute;  
   bottom:-14px;
   content: " ";
   left: -16px;
@@ -283,9 +297,25 @@
 }
 .product-item-img {
   width: 100%;
-  height: 230px;
+}
+.lider-box{
+  cursor: pointer;
+  padding-top:30px;
+}
+.dot:hover{
+  background-color: rgb(68, 67, 67);
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 .product-icons {
+  cursor: pointer;
   display: none;
   text-align:center;
   top: 24px;;
@@ -327,7 +357,8 @@
 }
 .section-slider {    
   text-align: center;
-  width: 760px;
+  max-width:771px;
+  width: 100%;
   margin: auto;
 }
 .slider-heading {
@@ -342,28 +373,21 @@
   color: #898989;
 }
 .section-container {
-  padding: 55px 0;
+  padding-bottom: 7%;
+  padding-top: 4%;
 }
 .slider {
-  padding-top: 55px;
+  padding-top: 48px;
 }
-.boxs {
-  margin-left: 60px;
-  display: flex;
-  justify-content: center;
-}
-.box {
-  cursor: pointer;
-  font-size: 30px;
-  color:#898989;
-  padding-left: 20px;
-}
+
 .silder-user {
-  padding-top: 28px;
-  padding-bottom: 22px;
+  padding-top: 26px;
+  padding-bottom: 16px;
 }
 .section-logos {
   width: 100%;
+  max-width: 1170px;
+  margin:auto;
   height: 150px;
   border-top: 1px solid #777777;
   display: flex;
@@ -378,11 +402,74 @@
   min-height: 100%;
 }
 .footer {
-  background: red;
+  width: 100%;
+  background: #222;
 }
 .footer-info {
+  padding: 50px 80px;
   width: 100%;
   max-width: 1170px;
   margin: auto;
+  text-align: center;
 }
-  
+.footer-logo{
+  margin-top: 5%;
+  padding: 0 12%;
+}
+.footer-text{
+  padding: 30px 0;
+  font-size: 14px ;
+  color: #777;
+  line-height: 25px;
+}
+.icon-footer{
+  font-size: 18px;
+  padding: 8px 20px;
+  color: #777;
+
+}
+
+.footer-contact {
+  border-top: 1px solid #777;
+  max-width: 1170px;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+  display: flex;
+}
+.footer-colums {
+  margin: 5% 0;
+  width: 25%;
+  list-style: none;
+}
+.footer-heading {
+  text-transform:uppercase;
+  color: #fff;
+  padding: 18px 0;
+  font-family:poppins Blod;
+  font-size: 18px;
+}
+.footer-colum-4 {
+  display: flex;
+}
+.footer-icon{
+  width: 30px;
+  display: flex;
+  align-items:center;
+}
+.footer-colum-4 i {
+  color: #777;
+  font-size: 14px;
+
+}
+.footer-right,
+.footer-bottun,
+.footer-colum-4 span {
+  font-size: 14px;
+  color: #777;
+  line-height:40px;
+}
+.footer-copyright {
+  background-color: #000;
+  text-align: center;
+}
