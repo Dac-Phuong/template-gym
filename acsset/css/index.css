@@ -5,6 +5,10 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 } */
+.font-family{
+  font-family: 'Poppins', Regular;
+
+}
 *{
   padding: 0;
   margin: 0;
@@ -26,8 +30,8 @@
   height: 100%;
   display: flex;
   justify-content: space-between;
-  width: 1170px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 1170px;
   margin: auto;
 
 }
@@ -47,6 +51,9 @@
 .nav-item {
   height: 100%;
 }
+.menu-icon{
+  display:none;
+}
 .nav-item-link {
   font-size: 16px;
   color: #fff;  
@@ -54,7 +61,9 @@
   display: block;
   font-weight: 400;
   text-decoration: none;
-  font-family: Myriad Pro ;
+}
+.nav-menu-mobile{
+  display: none;
 }
 .nav-icons {
   color: #fff;
@@ -170,6 +179,7 @@
   width: 100%;
   height: 100%;
   display: flex;
+  justify-content: space-between;
 }
 .colum-6 {
   width: 33.333%;
@@ -184,15 +194,15 @@
 .colum-6-img h4 {
   line-height: 24px;
   font-size: 18px;
-  padding: 20px 0;
+  padding: 2% 0;
   color: #000000;
 }
 .colum-6-img p {
   line-height: 24px;
   font-size: 14px;
-  font-family:Poppins Regular;
   color:#898989;
 }
+
 
 .img {
   width: 100%;
@@ -298,18 +308,18 @@
 .product-item-img {
   width: 100%;
 }
-.lider-box{
+.activity{
+  background-color:#dd2f31;
+}
+.slider-box{
   cursor: pointer;
   padding-top:30px;
-}
-.dot:hover{
-  background-color: rgb(68, 67, 67);
 }
 .dot {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #ccc;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -361,6 +371,12 @@
   width: 100%;
   margin: auto;
 }
+.slider-img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 .slider-heading {
   font-size: 36px;
   font-weight:bold;
@@ -386,13 +402,20 @@
 }
 .section-logos {
   width: 100%;
+  overflow: hidden;
   max-width: 1170px;
   margin:auto;
   height: 150px;
   border-top: 1px solid #777777;
   display: flex;
   align-items: center;
+  white-space: nowrap;
+  user-select: none;
+  overflow-x: auto;
   justify-content: space-between;
+}
+.section-logos::-webkit-scrollbar{
+  width:0;
 }
 .logo img{
   width:90%;
@@ -423,15 +446,16 @@
   line-height: 25px;
 }
 .icon-footer{
+  cursor: pointer;
   font-size: 18px;
   padding: 8px 20px;
   color: #777;
-
 }
 
 .footer-contact {
   border-top: 1px solid #777;
   max-width: 1170px;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
   margin: auto;

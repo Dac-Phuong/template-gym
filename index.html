@@ -6,11 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./acsset/fontawesome-free-6.1.2-web/fontawesome-free-6.1.2-web/css/all.min.css">
   <link rel="stylesheet" href="./acsset/css/index.css">
+   <link rel="stylesheet" href="./acsset/css/responsive.css">
   <title>Template</title>
 </head>
   <body>
     <header class="header">
       <div class="header-nav">
+       
         <div class="nav-logo">
           <img src="./acsset/img/Logo.png" alt="" class="nav-logo-img">
         </div>
@@ -30,6 +32,7 @@
             <i class="fa-solid fa-basket-shopping"></i>
           </div>
           <div class="nav-icon"><i class="fa-solid fa-user"></i></div>
+          <div class="nav-menu-mobile"><i class="fa-solid fa-bars"></i></div>
         </div>
       </div>
     </header>
@@ -50,24 +53,24 @@
           </div>
           <div class="category-product">
             <div class="category-product-colums">
-              <div class="colum-6"><img class="img" src="./acsset/img/img1.png" alt=""></div>
-              <div class="colum-6">
+              <div class="colum-6 main"><img class="img" src="./acsset/img/img1.png" alt=""></div>
+              <div class="colum-6 absolute-1">
                 <div class="colum-6-img">
                   <img src="./acsset/img/icon.png" alt="">
                   <h4>STRENGTH</h4>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
               </div>
-              <div class="colum-6"><img  class="img" src="./acsset/img/img2.png" alt=""></div>
-              <div class="colum-6">
+              <div class="colum-6 main"><img  class="img" src="./acsset/img/img2.png" alt=""></div>
+              <div class="colum-6 absolute-2">
                 <div class="colum-6-img">
                   <img src="./acsset/img/icon_1.png" alt="">
                   <h4>DUMBBELLS</h4>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
               </div>
-              <div class="colum-6"><img  class="img" src="./acsset/img/img_2.png" alt=""></div>
-              <div class="colum-6">
+              <div class="colum-6 none"><img  class="img" src="./acsset/img/img_2.png" alt=""></div>
+              <div class="colum-6 none ">
                 <div class="colum-6-img">
                   <img src="./acsset/img/icon_2.png" alt="">
                   <h4>POWER RACK & CAGES</h4>
@@ -94,11 +97,9 @@
           <div class="product">
             <ul class="product-list">
               <li type-food="featured" class="product-item">
-                <div class="product-item-link" href="">
+                <div class="product-item-link">
                   <div class="product-item-image">
-                    <img src="./acsset/img/product_1.png" alt="" class="product-item-img mySlides">
-                    <!-- <img src="./acsset/img/product_2.png" alt="" class="product-item-img mySlides">
-                    <img src="./acsset/img/product_3.png" alt="" class="product-item-img mySlides"> -->
+                    <img src="./acsset/img/product_1.png" alt="" class="product-item-img ">
                   </div>
                   <div class="item-price">
                     <h4 class="product-item-name">Body champ cardio</h4>
@@ -159,7 +160,7 @@
                 </div>
               </li>
               <li type-food="featured" class="product-item">
-                <a class="product-item-link" href="">
+                <div class="product-item-link" href="">
                   <img src="./acsset/img/product_5.png" alt="" class="product-item-img">
                   <div class="item-price">
                     <h4 class="product-item-name">AFG Pro 7.2AI Incline</h4>
@@ -171,10 +172,10 @@
                     <span class="product-icon"><i class=" fa-solid fa-heart"></i></span>
                     <span class="product-icon"> <i class=" fa-solid fa-arrow-right-arrow-left"></i></span>           
                   </div>
-               </a>
+                </div>
               </li>
               <li type-food="most" class="product-item">
-                <a class="product-item-link" href="">
+                <div class="product-item-link" href="">
                   <img src="./acsset/img/product_6.png" alt="" class="product-item-img">
                   <div class="item-price">
                     <h4 class="product-item-name">Weight Bench</h4>
@@ -186,10 +187,10 @@
                     <span class="product-icon"><i class=" fa-solid fa-heart"></i></span>
                     <span class="product-icon"> <i class=" fa-solid fa-arrow-right-arrow-left"></i></span>           
                   </div>
-               </a>
+                </div>
               </li>
               <li type-food="featured" class="product-item">
-                <a class="product-item-link" href="">
+                <div class="product-item-link" href="">
                   <img src="./acsset/img/product_7.png" alt="" class="product-item-img">
                   <div class="item-price">
                     <h4 class="product-item-name">ProForm Hiit Trainer Lite 5.9</h4>
@@ -201,10 +202,10 @@
                     <span class="product-icon"><i class=" fa-solid fa-heart"></i></span>
                     <span class="product-icon"> <i class=" fa-solid fa-arrow-right-arrow-left"></i></span>           
                   </div>
-               </a>
+               </div>
               </li>
               <li type-food="featured" class="product-item">
-                <a class="product-item-link" href="">
+                <div class="product-item-link" href="">
                   <img src="./acsset/img/product_8.png" alt="" class="product-item-img">
                   <div class="item-price">
                     <h4 class="product-item-name">Fitness Gear Pro</h4>
@@ -216,7 +217,7 @@
                     <span class="product-icon"><i class=" fa-solid fa-heart"></i></span>
                     <span class="product-icon"> <i class=" fa-solid fa-arrow-right-arrow-left"></i></span>           
                   </div>
-               </a>
+               </div>
               </li>
               
             </ul>
@@ -234,27 +235,27 @@
                   </div>
                  
                 </div>
-                <!-- <div class="slider-show mySlides">
-                  <img src="./acsset/img/logo_2.png" alt="" class="slider-img">
+                <div class="slider-show mySlides">
+                  <img src="./acsset/img/er.jpg" alt="" class="slider-img">
                   <p class="slider-p">“Good services. I bought a bicycle with a wrong but they accepted free return for me and exchange a new product for me.</p>
                   <div class="silder-user">
-                    <h2 class="silder-name">LINA</h2>
+                    <h2 class="silder-name">ERICK</h2>
                     <p>Happy clients</p>
                   </div>
                 </div>
                 <div class="slider-show mySlides">
-                  <img src="./acsset/img/logo_3.png" alt="" class="slider-img">
+                  <img src="./acsset/img/bz.jpg" alt="" class="slider-img">
                   <p class="slider-p">“Good services. I bought a bicycle with a wrong but they accepted free return for me and exchange a new product for me.</p>
                   <div class="silder-user">
-                    <h2 class="silder-name">LINA</h2>
+                    <h2 class="silder-name">BINZ</h2>
                     <p>Happy clients</p>
                   </div>
-                </div> -->
                 </div>
-                <div class="lider-box" style="text-align:center">
-                  <span onclick="showSlides(1)" class="dot"></span> 
-                  <span onclick="showSlides(2)" class="dot"></span> 
-                  <span onclick="showSlides(3)" class="dot"></span> 
+                </div>
+                <div class="slider-box" style="text-align:center">
+                  <span  class="dot"></span> 
+                  <span  class="dot"></span> 
+                  <span  class="dot"></span> 
               </div>             
               </div>
             </div>
@@ -288,7 +289,7 @@
         </div>
       </div>
       <div class="footer-contact">
-        <ul class="footer-colums">
+        <ul class="footer-colums colum-1">
           <h2 class="footer-heading">CONTACTUS</h2>
           <li class="footer-colum-4">
             <div class="footer-icon">
