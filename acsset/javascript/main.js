@@ -16,9 +16,12 @@ foodBtns.forEach((btn) => {
 	})
 })
  
-function love(){
-	alert('Đã thêm vào yêu thích')
-}
+// function love(){
+// 	var like = document.querySelectorAll(".like")
+// 	like.style.
+// 	console.log(like)
+// 	alert('Đã thêm vào yêu thích')
+// }
 let slideIndex = 0;
 showSlides();
 
@@ -38,29 +41,29 @@ function showSlides() {
   dots[slideIndex-1].className += " activity"; 
   setTimeout(showSlides, 2000); 
 }
-// const wrapper = document.querySelector('.section-logos')
-// let isMouseDown = false
-// let startX, scrollLeft
+const wrapper = document.querySelector('.section-logos')
+let isMouseDown = false
+let startX, scrollLeft
 
-// wrapper.addEventListener('mousedown', (e) => {
-// 	isMouseDown = true
-// 	startX = e.pageX - wrapper.offsetLeft
-// 	scrollLeft = wrapper.scrollLeft
-// })
+wrapper.addEventListener('mousedown', (e) => {
+	isMouseDown = true
+	startX = e.pageX - wrapper.offsetLeft
+	scrollLeft = wrapper.scrollLeft
+})
+  
+wrapper.addEventListener('mouseleave', () => {
+	isMouseDown = false
+})
 
-// wrapper.addEventListener('mouseleave', () => {
-// 	isMouseDown = false
-// })
+wrapper.addEventListener('mouseup', () => {
+	isMouseDown = false
+})
 
-// wrapper.addEventListener('mouseup', () => {
-// 	isMouseDown = false
-// })
+wrapper.addEventListener('mousemove', (e) => {
+	if (!isMouseDown) return
 
-// wrapper.addEventListener('mousemove', (e) => {
-// 	if (!isMouseDown) return
-
-// 	const x = e.pageX - wrapper.offsetLeft
-// 	// 3 là tốc độ scroll
-// 	const walk = (x - startX) * 3
-// 	wrapper.scrollLeft = scrollLeft - walk
-// })
+	const x = e.pageX - wrapper.offsetLeft
+	// 3 là tốc độ scroll
+	const walk = (x - startX) * 3
+	wrapper.scrollLeft = scrollLeft - walk
+})
