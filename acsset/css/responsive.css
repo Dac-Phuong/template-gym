@@ -1,6 +1,14 @@
 @media screen and (max-width:320px) {
     .section-heading {
-        width: 85%;
+        width: 90%;
+        top: 10%;
+    }
+   
+    .category {
+        margin-top: -20px;
+    }
+    .footer-contact{
+        margin-left:0;
     }
     .footer-colum-4{
         display: flex;
@@ -60,7 +68,7 @@
         padding:0 20px;
     }
     .class {
-        margin-top: 100%;
+        margin-top: 140%;
     }
     .colum-6 {
         width: 100%;
@@ -127,6 +135,7 @@
     }
     .header {
         height: 70px;
+        line-height: 70px;
     }
   
     .section-conten{
@@ -134,7 +143,7 @@
         margin-top:-13%;   
     }
     .footer-info{
-        padding: 5% 0;
+        padding: 5% 20px;
     }
     .footer-right,.footer-text, .footer-bottun, .footer-colum-4 span,.silder-user, .slider-p{
         font-size: 10px;
@@ -155,6 +164,10 @@
 @media (min-width:321px) and (max-width:480px) {
     .section-heading {
         width: 85%;
+        top: 5%;
+    }
+    .footer-contact{
+        margin-left:0;
     }
     .footer-colum-4{
         display: flex;
@@ -189,7 +202,7 @@
         height: 60px;
     }
     .category-product {
-        margin-top: 8%;
+        margin-top: 25%;
         box-shadow: none;
     }
     
@@ -216,7 +229,7 @@
     }
     
     .class {
-        margin-top: 100%;
+        margin-top: 140%;
     }
     .colum-6 {
         width: 100%;
@@ -226,13 +239,13 @@
     }
     .slider-heading,
     .heading-h2 {
-        font-size: 18px;
+        font-size: 22px;
     }
     .heading-btn{
-        font-size: 14px;
+        font-size: 12px;
     }
     .heading-span{
-        font-size: 12px;
+        font-size: 14px;
     }
     .heading-p {
         line-height: 16px;
@@ -285,8 +298,7 @@
         height: 70px;
     }
     .section-conten{
-        width: 100%;
-        margin-top:-10%;   
+        width: 85%;
     }
     .footer-info{
         padding: 5% 0;
@@ -310,8 +322,11 @@
 @media (min-width:480px) and (max-width:760px) {
     .section-heading {
         width: 85%;
+        top: 9%;
     }
-   
+    .footer-contact{
+        margin-left:0;
+    }
     .logo {
         padding-top: 5%;
         margin-left: 20px;
@@ -352,7 +367,7 @@
     }
    
     .class {
-        margin-top: 35%;
+        margin-top: 62%;
     }
     .colum-6 {
         width: calc(50% - 5px);
@@ -415,6 +430,8 @@
     }
     .header {
         height: 70px;
+        position: relative;
+        background-color: #000;
     }
     .section-conten{
         width: 80%;
@@ -440,14 +457,18 @@
 }
 @media (min-width:761px) and (max-width:1022px) {
     .section-heading {
-        width: 85%;
+        width: 90%;;
+        top: 18%;
+    }
+    .category {
+        margin-top: -60px;
     }
     .nav-menu-mobile{
         display:block;
         font-size: 30px;
     }
     .category-product {
-        margin-top: 8%;
+        margin-top: 10%;
         box-shadow: none;
     }
     .category-product-colums {
@@ -469,9 +490,13 @@
     .section-logos,.footer-contact,
     .tabar {
         padding:0 30px;
+        
+    }
+    .footer-contact{
+        margin-left:0;
     }
     .class {
-        margin-top: 35%;
+        margin-top: 62%;
     }
     .colum-6 {
         width: calc(51% - 20px);
@@ -481,18 +506,18 @@
     }
     .slider-heading,
     .heading-h2 {
-        font-size: 38px;
+        font-size: 42px;
     }
     .heading-span{
-        font-size: 24px;
+        font-size: 34px;
     }
     .heading-p {
-        font-size: 10px;
+        font-size: 16px;
         padding-top:0;
     }
     .section-conten button{
-        margin: 20px 0;
-        padding: 8px 20px;
+        margin-top: 20px;
+        padding: 13px 35px;
         font-size: 10px;
     }
    
@@ -510,7 +535,7 @@
         margin-left: 0;
         margin-right: 45px;
     }
-    .none, .nav-list{
+     .nav-list{
         display:none;
     }
     .nav-logo-img{
@@ -524,6 +549,9 @@
     .category-product-colums .main:hover .absolute-1{
         display:block;
     }
+    .colum-6:hover .absolute-1{
+        display:block;
+    }
     .absolute-2,
     .absolute-1{
         width: calc(50% - 20px);
@@ -533,7 +561,7 @@
         position: absolute;
     }
     .section-conten{
-        width: 60%;
+        width: 80%;
     }
     .footer-right,.footer-text, .footer-bottun, .footer-colum-4 span,.silder-user, .slider-p{
         font-size: 10px;
@@ -559,10 +587,14 @@
 @media (min-width:1023px) and (max-width:1250px) {
     .section-heading{
         width: 85%;
+        top: 20%;
     }
     .nav-logo-img{
         width: 80%;
         height:auto;
+    }
+    .section-conten{
+        width:63%;
     }
     .item-price{
         padding-left: 15px;
@@ -581,7 +613,7 @@
         width:25%;
     }
     .category-product{
-        margin-top: 8%;
+        margin-top: 10%;
         box-shadow: none;
     }
     .category-product-colums{
@@ -602,26 +634,27 @@
         padding:0 30px;
     }
     .class{
-        margin-top: 35%;
+        margin-top: 60%;
     }
     .colum-6{
         width: calc(51% - 20px);
         height: 100%;
         border: 1px solid #ccc;
+        margin-bottom: 20px;
     }
     .heading-h2{
-        font-size: 40px;
+        font-size: 46px;
     }
     .heading-span{
-        font-size: 30px;
+        font-size: 36px;
     }
     .heading-p{
-        font-size: 10px;
+        font-size: 16px;
         padding-top:0;
     }
     .section-conten button{
-        margin: 20px 0;
-        padding: 8px 20px;
+        margin-top: 5%;
+        padding: 15px 40px;
         font-size: 10px;
     }
    
@@ -661,10 +694,4 @@
         height: 10px;
     }
    
-}
-@media (min-width:1300px) and (max-width:1450px)  {
-    .category-product{
-        width: 100%;
-        max-width: 1000px;
-    }
 }

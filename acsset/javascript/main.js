@@ -16,12 +16,7 @@ foodBtns.forEach((btn) => {
 	})
 })
  
-// function love(){
-// 	var like = document.querySelectorAll(".like")
-// 	like.style.
-// 	console.log(like)
-// 	alert('Đã thêm vào yêu thích')
-// }
+
 let slideIndex = 0;
 showSlides();
 
@@ -66,3 +61,11 @@ wrapper.addEventListener('mousemove', (e) => {
 	const walk = (x - startX) * 3
 	wrapper.scrollLeft = scrollLeft - walk
 })
+function none (){
+	close = document.querySelector(".menu-mobile")
+	close.style.display = "none"
+}
+function block (){
+	add = document.querySelector(".menu-mobile")
+	add.style.display = "block"
+}
