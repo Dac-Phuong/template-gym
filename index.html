@@ -6,7 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./acsset/fontawesome-free-6.1.2-web/fontawesome-free-6.1.2-web/css/all.min.css">
   <link rel="stylesheet" href="./acsset/css/index.css">
-   <link rel="stylesheet" href="./acsset/css/responsive.css">
+  <link rel="stylesheet" href="./acsset/css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js" integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <title>Template</title>
 </head>
   <body>
@@ -16,26 +21,32 @@
           <img src="./acsset/img/Logo.png" alt="" class="nav-logo-img">
         </div>
         <ul class="nav-list">
-          <li class="nav-item"><a href="#" class="nav-item-link">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-item-link">Pages</a></li>
-          <li class="nav-item"><a href="#" class="nav-item-link">Classes</a></li>
-          <li class="nav-item"><a href="#" class="nav-item-link">Portfolio</a></li>
-          <li class="nav-item"><a href="#" class="nav-item-link">Blog</a></li>
-          <li class="nav-item"><a href="#" class="nav-item-link">Contacts</a></li>
+          <li class="nav-item"><a href="#Home" class="nav-item-link">Home</a></li>
+          <li class="nav-item"><a href="#Pages" class="nav-item-link">Pages</a></li>
+          <li class="nav-item"><a href="#Classes" class="nav-item-link">Classes</a></li>
+          <li class="nav-item"><a href="#Portfolio" class="nav-item-link">Portfolio</a></li>
+          <li class="nav-item"><a href="#Blog" class="nav-item-link">Blog</a></li>
+          <li class="nav-item"><a href="#Contacts" class="nav-item-link">Contacts</a></li>
         </ul>
         <div class="nav-icons">
           <div class="nav-icon nav-icon-class">
-            <a href="#">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </a>
+            <div class="searchh" href="">
+              <i onclick=" add ()" class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="search-input">
+              <form action="post">
+                <input class="input" type="text" placeholder="search...">
+              </form>
+            </div>
           </div>
           <div class="nav-icon nav-icon-class">
-            <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
+            <a href=""><i class="fa-solid fa-basket-shopping"></i></a>
           </div>
-          <div class="nav-icon"><a href="#"><i class="fa-solid fa-user"></i></a></div>
+          <div class="nav-icon"><a href=""><i class="fa-solid fa-user"></i></a></div>
           <div onclick="block()" class="nav-menu-mobile">
-            <a  class="nav-link" href="#"><i  class="fa-solid fa-bars"></i></a>
+            <i  class="fa-solid fa-bars"></i>
           </div>
+         
         </div>
       </div>
     </header>
@@ -75,7 +86,7 @@
     <section class="section">
       <div class="section-main">
         <div class="baner">
-          <img src="./acsset/img/baner.jpg" alt="" class="baner-img">
+          <img  onclick=" close ()" src="./acsset/img/baner.jpg" alt="" class="baner-img">
           <div class="section-heading">
             <div class="section-conten">
               <h2 class="heading-h2">Dumbbells Shop</h2>
@@ -134,7 +145,7 @@
           <div class="product">
             <ul class="product-list">
               <li type-food="most" class="product-item">
-                <a class="product-item-link" href="#">
+                <a class="product-item-link" href="">
                   <img src="./acsset/img/product_1.png" alt="" class="product-item-img">
                   <div class="item-price">
                     <h4 class="product-item-name">Body Solid GCEC340</h4>
@@ -142,14 +153,14 @@
                   </div>                 
                 </a>
                 <div class="product-icons">
-                  <span class="product-icon"><a href="#"><i class="fa-solid fa-basket-shopping"></i></a></span>
-                  <span class="product-icon"><a href="#"><i class="fa-solid fa-eye"></i></a></span>
-                  <span class="product-icon"><a href="#"><i onclick="love() "class="like fa-solid fa-heart"></i></a></span>
+                  <span class="product-icon"><a href=""><i class="fa-solid fa-basket-shopping"></i></a></span>
+                  <span class="product-icon"><a href=""><i class="fa-solid fa-eye"></i></a></span>
+                  <span class="product-icon"><a href=""><i onclick="love() "class="like fa-solid fa-heart"></i></a></span>
                   <span class="product-icon next-img"><a href="#"> <i class=" fa-solid fa-arrow-right-arrow-left"></i></a></span>           
                 </div>
               </li>
               <li type-food="most" class="product-item">
-                <a class="product-item-link" href="#">
+                <a class="product-item-link" href="">
                   <img src="./acsset/img/product_2.png" alt="" class="product-item-img">
                   <div class="item-price">
                     <h4 class="product-item-name">Body Solid GCEC340</h4>
@@ -158,14 +169,14 @@
                   
                 </a>
                 <div class="product-icons">
-                  <span class="product-icon"><a href="#"><i class="fa-solid fa-basket-shopping"></i></a></span>
-                  <span class="product-icon"><a href="#"><i class="fa-solid fa-eye"></i></a></span>
-                  <span class="product-icon"><a href="#"><i onclick="love() "class="like fa-solid fa-heart"></i></a></span>
-                  <span class="product-icon next-img"><a href="#"> <i class=" fa-solid fa-arrow-right-arrow-left"></i></a></span>           
+                  <span class="product-icon"><a href=""><i class="fa-solid fa-basket-shopping"></i></a></span>
+                  <span class="product-icon"><a href=""><i class="fa-solid fa-eye"></i></a></span>
+                  <span class="product-icon"><a href=""><i onclick="love() "class="like fa-solid fa-heart"></i></a></span>
+                  <span class="product-icon next-img"><a href=""> <i class=" fa-solid fa-arrow-right-arrow-left"></i></a></span>           
                 </div>
               </li>
               <li type-food="featured" class="product-item">
-                <a class="product-item-link" href="#">
+                <a class="product-item-link" href="">
                   <img src="./acsset/img/product_3.png" alt="" class="product-item-img">
                   <div class="item-price">
                     <h4 class="product-item-name">Bowflex BXE116 Elliptical
@@ -175,14 +186,14 @@
                  
                 </a>
                 <div class="product-icons">
-                  <span class="product-icon"><a href="#"><i class=" fa-solid fa-basket-shopping"></i></a></span>
-                  <span class="product-icon"><a href="#"><i class="fa-solid fa-eye"></i></a></span>
-                  <span class="product-icon"><a href="#"><i onclick="love() "class="like fa-solid fa-heart"></i></a></span>
-                  <span class="product-icon next-img"><a href="#"> <i class=" fa-solid fa-arrow-right-arrow-left"></i></a></span>           
+                  <span class="product-icon"><a href=""><i class=" fa-solid fa-basket-shopping"></i></a></span>
+                  <span class="product-icon"><a href=""><i class="fa-solid fa-eye"></i></a></span>
+                  <span class="product-icon"><a href=""><i onclick="love() "class="like fa-solid fa-heart"></i></a></span>
+                  <span class="product-icon next-img"><a href=""> <i class=" fa-solid fa-arrow-right-arrow-left"></i></a></span>           
                 </div>
               </li>
               <li type-food="most" class="product-item">
-                <a class="product-item-link" href="#">
+                <a class="product-item-link" href="">
                   <img src="./acsset/img/product_4.png" alt="" class="product-item-img">
                   <div class="item-price">
                     <h4 class="product-item-name">ETHOS GHD</h4>
@@ -191,14 +202,14 @@
                   
                 </a>
                 <div class="product-icons">
-                  <span class="product-icon"><a href="#"><i class=" fa-solid fa-basket-shopping"></i></a></span>
-                  <span class="product-icon"><a href="#"><i class="fa-solid fa-eye"></i></a></span>
-                  <span class="product-icon"><a href="#"><i onclick="love() "class="like fa-solid fa-heart"></i></a></span>
+                  <span class="product-icon"><a href=""><i class=" fa-solid fa-basket-shopping"></i></a></span>
+                  <span class="product-icon"><a href=""><i class="fa-solid fa-eye"></i></a></span>
+                  <span class="product-icon"><a href=""><i onclick="love() "class="like fa-solid fa-heart"></i></a></span>
                   <span class="product-icon next-img"><a href="#"> <i class=" fa-solid fa-arrow-right-arrow-left"></i></a></span>           
                 </div>
               </li>
               <li type-food="featured" class="product-item">
-                <a class="product-item-link" href="#">
+                <a class="product-item-link" href="">
                   <img src="./acsset/img/product_5.png" alt="" class="product-item-img">
                   <div class="item-price">
                     <h4 class="product-item-name">AFG Pro 7.2AI Incline</h4>
@@ -207,14 +218,14 @@
                   
                 </a>
                 <div class="product-icons">
-                  <span class="product-icon"><a href="#"><i class=" fa-solid fa-basket-shopping"></i></a></span>
-                  <span class="product-icon"><a href="#"><i class="fa-solid fa-eye"></i></a></span>
-                  <span class="product-icon"><a href="#"><i onclick="love() "class="like fa-solid fa-heart"></i></a></span>
-                  <span class="product-icon next-img"><a href="#"> <i class=" fa-solid fa-arrow-right-arrow-left"></i></a></span>           
+                  <span class="product-icon"><a href=""><i class=" fa-solid fa-basket-shopping"></i></a></span>
+                  <span class="product-icon"><a href=""><i class="fa-solid fa-eye"></i></a></span>
+                  <span class="product-icon"><a href=""><i onclick="love() "class="like fa-solid fa-heart"></i></a></span>
+                  <span class="product-icon next-img"><a href=""> <i class=" fa-solid fa-arrow-right-arrow-left"></i></a></span>           
                 </div>
               </li>
               <li type-food="most" class="product-item">
-                <a class="product-item-link" href="#">
+                <a class="product-item-link" href="">
                   <img src="./acsset/img/product_6.png" alt="" class="product-item-img">
                   <div class="item-price">
                     <h4 class="product-item-name">Weight Bench</h4>
@@ -223,14 +234,14 @@
                   
                 </a>
                 <div class="product-icons">
-                  <span class="product-icon"><a href="#"><i class=" fa-solid fa-basket-shopping"></i></a></span>
-                  <span class="product-icon"><a href="#"><i class="fa-solid fa-eye"></i></a></span>
-                  <span class="product-icon"><a href="#"><i onclick="love() "class="like fa-solid fa-heart"></i></a></span>
-                  <span class="product-icon next-img"><a href="#"> <i class=" fa-solid fa-arrow-right-arrow-left"></i></a></span>           
+                  <span class="product-icon"><a href=""><i class=" fa-solid fa-basket-shopping"></i></a></span>
+                  <span class="product-icon"><a href=""><i class="fa-solid fa-eye"></i></a></span>
+                  <span class="product-icon"><a href=""><i onclick="love() "class="like fa-solid fa-heart"></i></a></span>
+                  <span class="product-icon next-img"><a href=""> <i class=" fa-solid fa-arrow-right-arrow-left"></i></a></span>           
                 </div>
               </li>
               <li type-food="featured" class="product-item">
-                <a class="product-item-link" href="#">
+                <a class="product-item-link" href="">
                   <img src="./acsset/img/product_7.png" alt="" class="product-item-img">
                   <div class="item-price">
                     <h4 class="product-item-name">ProForm Hiit Trainer Lite 5.9</h4>
@@ -239,14 +250,14 @@
                  
                </a>
                <div class="product-icons">
-                <span class="product-icon"><a href="#"><i class=" fa-solid fa-basket-shopping"></i></a></span>
-                <span class="product-icon"><a href="#"><i class="fa-solid fa-eye"></i></a></span>
-                <span class="product-icon"><a href="#"><i onclick="love() "class="like fa-solid fa-heart"></i></a></span>
-                <span class="product-icon next-img"><a href="#"> <i class=" fa-solid fa-arrow-right-arrow-left"></i></a></span>           
+                <span class="product-icon"><a href=""><i class=" fa-solid fa-basket-shopping"></i></a></span>
+                <span class="product-icon"><a href=""><i class="fa-solid fa-eye"></i></a></span>
+                <span class="product-icon"><a href=""><i onclick="love() "class="like fa-solid fa-heart"></i></a></span>
+                <span class="product-icon next-img"><a href=""> <i class=" fa-solid fa-arrow-right-arrow-left"></i></a></span>           
               </div>
               </li>
               <li type-food="featured" class="product-item">
-                <a class="product-item-link" href="#">
+                <a class="product-item-link" href="">
                   <img src="./acsset/img/product_8.png" alt="" class="product-item-img">
                   <div class="item-price">
                     <h4 class="product-item-name">Fitness Gear Pro</h4>
@@ -255,10 +266,10 @@
                   
                </a>
                <div class="product-icons">
-                <span class="product-icon"><a href="#"><i class=" fa-solid fa-basket-shopping"></i></a></span>
-                <span class="product-icon"><a href="#"><i class="fa-solid fa-eye"></i></a></span>
-                <span class="product-icon"><a href="#"><i onclick="love() "class="like fa-solid fa-heart"></i></a></span>
-                <span class="product-icon next-img"><a href="#"> <i class=" fa-solid fa-arrow-right-arrow-left"></i></a></span>           
+                <span class="product-icon"><a href=""><i class=" fa-solid fa-basket-shopping"></i></a></span>
+                <span class="product-icon"><a href=""><i class="fa-solid fa-eye"></i></a></span>
+                <span class="product-icon"><a href=""><i onclick="love() "class="like fa-solid fa-heart"></i></a></span>
+                <span class="product-icon next-img"><a href=""> <i class=" fa-solid fa-arrow-right-arrow-left"></i></a></span>           
               </div>
               </li>
               
@@ -267,8 +278,8 @@
           <div class="section-container">
             <div class="section-slider">
               <h2 class="slider-heading">See What They Said About Us</h2>
-              <div class="slider">
-                <div class="slider-show mySlides">
+              <div class="slider single-item">
+                <div class="slider-show ">
                   <img src="./acsset/img/logo_1.png" alt="" class="slider-img">
                   <p class="slider-p">“Good services. I bought a bicycle with a wrong but they accepted free return for me and exchange a new product for me.</p>
                   <div class="silder-user">
@@ -277,7 +288,7 @@
                   </div>
                  
                 </div>
-                <div class="slider-show mySlides">
+                <div class="slider-show ">
                   <img src="./acsset/img/er.jpg" alt="" class="slider-img">
                   <p class="slider-p">“Good services. I bought a bicycle with a wrong but they accepted free return for me and exchange a new product for me.</p>
                   <div class="silder-user">
@@ -285,7 +296,7 @@
                     <p>Happy clients</p>
                   </div>
                 </div>
-                <div class="slider-show mySlides">
+                <div class="slider-show ">
                   <img src="./acsset/img/bz.jpg" alt="" class="slider-img">
                   <p class="slider-p">“Good services. I bought a bicycle with a wrong but they accepted free return for me and exchange a new product for me.</p>
                   <div class="silder-user">
@@ -293,14 +304,9 @@
                     <p>Happy clients</p>
                   </div>
                 </div>
-                </div>
-                <div class="slider-box" style="text-align:center">
-                  <span onclick="showSlides(0)"  class="dot"></span> 
-                  <span onclick="showSlides(1)"  class="dot"></span> 
-                  <span onclick="showSlides(2)" class="dot"></span> 
-              </div>             
               </div>
-            </div>
+                 
+            </div>           
           </div>
           <div class="section-logos">
             <div class="logo"><a href="#"><img src="./acsset/img/logo1.png" alt=""></a></div>
@@ -324,10 +330,10 @@
           </p>
         </div>
         <div class="footer-icons">
-          <a href="#"><i class="icon-footer fa-brands fa-facebook-f"></i></a>
-          <a href="#"><i class="icon-footer fa-brands fa-twitter"></i></a>
-          <a href="#"><i class="icon-footer fa-brands fa-google-plus-g"></i></a>
-          <a href="#"><i class="icon-footer fa-brands fa-youtube"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100038439038475"><i class="icon-footer fa-brands fa-facebook-f"></i></a>
+          <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoidmkifQ%3D%3D%22%7D"><i class="icon-footer fa-brands fa-twitter"></i></a>
+          <a href="https://www.google.com.vn/?hl=vi"><i class="icon-footer fa-brands fa-google-plus-g"></i></a>
+          <a href="https://www.youtube.com/"><i class="icon-footer fa-brands fa-youtube"></i></a>
         </div>
       </div>
       <div class="footer-contact">
@@ -338,19 +344,19 @@
               <div class="footer-icon">
                 <i class="fa-solid fa-location-dot"></i>
               </div>
-              <a href="#"><span> 200 Lincoln Ave, Salinas, CA 93901</span></a>
+              <a href="https://www.google.com/maps/place/Z115,+%C4%90%C6%B0%E1%BB%9Dng+Z+115,+Quy%E1%BA%BFt+Th%E1%BA%AFng,+Th%C3%A0nh+ph%E1%BB%91+Th%C3%A1i+Nguy%C3%AAn,+Th%C3%A1i+Nguy%C3%AAn,+Vi%E1%BB%87t+Nam/@21.589731,105.7928788,17z/data=!3m1!4b1!4m5!3m4!1s0x31352742defbe071:0xa9887c9d021c5de6!8m2!3d21.5898946!4d105.7949075?hl=vi"><span> 200 Lincoln Ave, Salinas, CA 93901</span></a>
             </li>
             <li class="footer-colum-4">
               <div class="footer-icon">
                  <i class="fa-solid fa-phone-flip"></i>
               </div>
-              <a href="#"><span> 023 32423 223</span></a>
+              <a href="tel:+0334262754"><span> 023 32423 223</span></a>
             </li>
             <li class="footer-colum-4">
               <div class="footer-icon">
                 <i class="fa-solid fa-envelope"></i>
              </div>
-              <a href="#"><span> gymax@example.com</span></a>
+              <a href="https://myaccount.google.com/?hl=vi&utm_source=OGB&utm_medium=act&pli=1"><span> gymax@example.com</span></a>
             </li>
             <li class="footer-colum-4">
               <div class="footer-icon">
@@ -411,5 +417,17 @@
       </div>
     </footer>
   </body>
-<script src="./acsset/javascript/main.js"></script>
+  <!-- <script src="./acsset/javascript/functions.js"></script> -->
+  <script src="./acsset/javascript/main.js"></script>
+  <script type="text/javascript">
+    $('.single-item').slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      adaptiveHeight: true
+    });
+   
+  </script>
+  
 </html>
